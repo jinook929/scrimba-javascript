@@ -51,3 +51,65 @@ let example3 = 55.5555.toFixed();
 console.log(example3);
 let example4 = 200.0.toFixed(2);
 console.log(example4);
+
+let x = 0;
+while(x < 10){
+  console.log(x);
+  console.log(x < 10);
+  x++; // x = x + 1;
+}
+
+let arr1 = [5, 7, 6];
+console.log(arr1);
+
+arr1.push(8, 9, 10, "HI", 11);
+console.log(arr1);
+
+arr1.pop();
+console.log(arr1);
+
+arr1[0] = 1
+console.log(arr1);
+
+let i = 0;
+while(i < 7) {
+  console.log(arr1[i]);
+  i++;
+}
+
+arr1.forEach(function(e){
+  console.log(e);
+});
+
+let arr2 = ['Jinook', 9, true];
+console.log(arr2);
+let arr3 = arr2;
+console.log(arr3);
+console.log("=====");
+
+arr3.push(11);
+console.log(arr3);
+console.log(arr2);
+console.log("=====");
+
+let arr4 = [...arr2];
+console.log(arr4);
+let arr5 = arr2.map(function(e){
+  return e;
+});
+console.log(arr5);
+console.log("=====");
+
+arr3.push(2019);
+console.log(arr2);
+console.log(arr3);
+console.log(arr4);
+console.log(arr5);
+console.log("=====");
+
+arr4.push("Hola!");
+console.log(arr2);
+console.log(arr3);
+console.log(arr4);
+console.log(arr5);
+
