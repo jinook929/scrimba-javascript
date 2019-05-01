@@ -87,7 +87,7 @@ let arr3 = arr2;
 console.log(arr3);
 console.log("=====");
 
-arr3.push(11);
+arr3.push(11); // 
 console.log(arr3);
 console.log(arr2);
 console.log("=====");
