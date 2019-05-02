@@ -59,6 +59,7 @@ while(x < 10){
   x++; // x = x + 1;
 }
 
+// ARRAYS ********************************************
 let arr1 = [5, 7, 6];
 console.log(arr1);
 
@@ -113,3 +114,162 @@ console.log(arr3);
 console.log(arr4);
 console.log(arr5);
 
+// OBJECTS ********************************************
+let person1 = {
+  firstName: 'Jinook',
+  lastName: 'Jung',
+  address: {
+    city: 'Flushing',
+    state: 'New York'
+  },
+  age: 44,
+  cats: ['Milo', 'Tito', 'Archie']
+};
+
+console.log(person1.firstName);
+console.log(person1.address.city);
+
+console.log(person1.age);
+person1.age = 43;
+console.log(person1.age);
+
+console.log(Object.keys(person1));
+console.log(Object.values(person1));
+
+console.log(person1.hasOwnProperty('firstName'));
+console.log(person1.hasOwnProperty('firstName2'));
+
+let person2 = {
+  firstName: 'Dylan'
+};
+
+let person3 = person2;
+
+person3.lastName = 'Israel';
+
+console.log(person2);
+console.log(person3);
+
+let person4 = Object.assign({}, person2);
+person4.age = 25;
+console.log(person4);
+console.log(person2);
+
+// MATH OPERATORS ********************************************
+console.log(5 + 5 - 4 * 4 / 4);
+console.log(5 % 2);
+console.log(typeof 10);
+console.log(typeof '10');
+console.log(10 == '10');
+console.log(10 === '10');
+
+let num1 = 10;
+num1++; // num1 = num1 + 1
+console.log(num1);
+num1--; // num1 = num1 - 1
+console.log(num1);
+num1+=5; // num1 = num1 + 5
+console.log(num1);
+num1/=5; // num1 = num1 / 5
+console.log(num1);
+num1*=5; // num1 = num1 * 5
+console.log(num1);
+num1-=5; // num1 = num1 - 5
+console.log(num1);
+
+
+// CONTROL FLOW ***************************************************
+console.log(10 === 10 && 5 < 4);
+console.log(10 === 10 || 5 < 4);
+console.log((5 >= 5 || 4 > 4) && 3 + 2 === 5);
+
+let num2 = 5;
+
+if(num2 === 6 || false === true) {
+  console.log('Runs');
+} else if(false) {
+  console.log('else if');
+} else {
+  console.log('else');
+}
+
+let studentAnswer = 'A';
+switch(studentAnswer) {
+  case 'A':
+    console.log('A is wrong.');
+    break;
+  case 'B':
+    console.log('B is wrong.');
+    break;
+  case 'C':
+    console.log('C is correct.');
+    break;
+  default:
+    console.log('Your choice does not exists.')
+}
+
+studentAnswer = 'B';
+switch(studentAnswer) {
+  case 'A':
+    console.log('A is wrong.');
+    break;
+  case 'B':
+    console.log('B is wrong.');
+    break;
+  case 'C':
+    console.log('C is correct.');
+    break;
+  default:
+    console.log('Your choice does not exists.')
+}
+
+studentAnswer = 'C';
+switch(studentAnswer) {
+  case 'A':
+    console.log('A is wrong.');
+    break;
+  case 'B':
+    console.log('B is wrong.');
+    break;
+  case 'C':
+    console.log('C is correct.');
+    break;
+  default:
+    console.log('Your choice does not exists.')
+}
+
+studentAnswer = 'D';
+switch(studentAnswer) {
+  case 'A':
+    console.log('A is wrong.');
+    break;
+  case 'B':
+    console.log('B is wrong.');
+    break;
+  case 'C':
+    console.log('C is correct.');
+    break;
+  default:
+    console.log('Your choice does not exists.')
+}
+
+function isCorrect(answer) {
+  switch(answer) {
+    case 'A':
+      console.log('A is wrong.');
+      break;
+    case 'B':
+      console.log('B is wrong.');
+      break;
+    case 'C':
+      console.log('C is correct.');
+      break;
+    default:
+      console.log('Your choice does not exists.');
+      // break;
+  }
+}
+
+isCorrect('E');
+isCorrect('A');
+isCorrect('C');
