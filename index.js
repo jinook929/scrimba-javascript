@@ -266,10 +266,36 @@ function isCorrect(answer) {
       break;
     default:
       console.log('Your choice does not exists.');
-      // break;
   }
 }
 
 isCorrect('E');
 isCorrect('A');
 isCorrect('C');
+
+//  LOOP ************************************************
+let total = 0;
+for(let i = 0; i < 5; i++) {
+  total += i;
+}
+console.log(total);
+
+let numArray = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+let sum = 0;
+for(let i = 0; i < numArray.length; i++) {
+  // sum = sum + numArray[i];
+  sum += numArray[i];
+}
+console.log(sum);
+
+sum = 0;
+i = 0;
+while(i < numArray.length) {
+  sum += numArray[i];
+  console.log(sum);
+  i++;
+}
+
+
+ 
+
